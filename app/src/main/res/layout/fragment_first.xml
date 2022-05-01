@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FirstFragment"
+    android:padding="8dp"
+    android:background="@color/teal_200"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="여기는 프레그먼트 "/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:scrollbars="vertical" />
+
+
+
+</LinearLayout>
